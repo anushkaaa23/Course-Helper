@@ -1,0 +1,145 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: radial-gradient(circle at top, #0078d7, #003e75);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    color: #222;
+  }
+  
+  .form-container {
+    background: linear-gradient(145deg, #ffffff, #f4f4f4);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.1), -6px -6px 15px rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin: 40px 0;
+    border: 1px solid #ddd;
+  }
+  
+  h1 {
+    margin-bottom: 18px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+  }
+  
+  label {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+    text-align: left;
+    font-weight: 500;
+  }
+  
+  input[type="url"], input[type="text"], input[type="number"], textarea {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    background-color: #fafafa;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input[type="url"]:focus, input[type="text"]:focus, input[type="number"]:focus, textarea:focus {
+    border-color: #0078d7;
+    box-shadow: 0 0 6px rgba(0, 120, 215, 0.4);
+  }
+  
+  button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(145deg, #0078d7, #005bb5);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #005bb5;
+    transform: scale(1.03);
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  #courses-container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .course-card {
+    background: linear-gradient(145deg, #ffffff, #f1f1f1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1), -4px -4px 12px rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .course-card img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  
+  .course-card h3 {
+    margin: 10px 0;
+    font-size: 1.4rem;
+    color: #2c3e50;
+  }
+  
+  .course-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .delete-btn {
+    background: linear-gradient(145deg, #d32f2f, #b71c1c);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    cursor: pointer;
+    align-self: flex-start;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .delete-btn:hover {
+    background-color: #a31515;
+    transform: translateY(-2px);
+  }
+  
+  .delete-btn:active {
+    transform: translateY(0);
+  }
+  

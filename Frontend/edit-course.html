@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Course</title>
+  <link rel="stylesheet" href="edit.css">
+</head>
+<body>
+  <header>
+    <h1>Edit Course</h1>
+    <a href="index.html">Back to Home</a>
+  </header>
+
+  <main>
+    <div class="form-container">
+      <form id="edit-course-form">
+        <label for="course-img">Image URL</label>
+        <input type="text" id="course-img" required>
+        
+        <label for="course-name">Course Name</label>
+        <input type="text" id="course-name" required>
+        
+        <label for="course-code">Course Code</label>
+        <input type="text" id="course-code" required>
+        
+        <label for="course-credits">Credits</label>
+        <input type="number" id="course-credits" required>
+        
+        <label for="course-topics">Topics (comma-separated)</label>
+        <textarea id="course-topics" required></textarea>
+        
+        <button type="submit">Save Changes</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="edit-script.js"></script>
+</body>
+</html>
